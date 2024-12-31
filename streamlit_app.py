@@ -12,45 +12,54 @@ st.set_page_config(
 
 # Custom CSS for modern styling
 st.markdown("""
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-    
-    .main {
-        background: #0E1117;
-    }
-    
-    .stTextInput > label {
-        font-family: 'Poppins', sans-serif;
-        color:  #0E1117 !important;
-        font-size: 1.2rem !important;
-    }
-    
-    .big-font {
-        font-family: 'Poppins', sans-serif;
-        color:  #0E1117;
-        font-size: 2.5rem !important;
-        font-weight: 600;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    
-    .wish-text {
-        font-family: 'Poppins', sans-serif;
-        color:  #0E1117;
-        font-size: 1.8rem !important;
-        text-align: center;
-        padding: 2rem;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-        backdrop-filter: blur(10px);
-        margin: 2rem 0;
-    }
-    
-    .sparkles {
-        font-size: 2rem;
-        margin: 0 0.5rem;
-    }
-    </style>
+   <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.stApp {
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96C93D, #FED766);
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+}
+
+.stTextInput > label {
+    font-family: 'Poppins', sans-serif;
+    color: white !important;
+    font-size: 1.2rem !important;
+}
+
+.big-font {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 2.5rem !important;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.wish-text {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.8rem !important;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    margin: 2rem 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sparkles {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+}
+</style>
 """, unsafe_allow_html=True)
 
 # Title with custom styling
@@ -90,6 +99,6 @@ if st.button("Generate Wish", key="wish_button"):
 st.markdown("---")
 current_year = datetime.now().year
 st.markdown(
-    f'<p style="text-align: center; color:  #0E1117;">© {current_year} | Made with ❤️ by nabin</p>',
+    f'<p style="text-align: center; color: white;">© {current_year} | Made with ❤️ by nabin</p>',
     unsafe_allow_html=True
 )
