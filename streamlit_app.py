@@ -15,7 +15,7 @@ st.markdown("""
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     
     .main {
-        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        background: #0E1117;
     }
     
     .stTextInput > label {
