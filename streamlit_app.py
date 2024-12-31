@@ -3,8 +3,8 @@ from datetime import datetime
 import time
 from PIL import Image
 
-
-
+image=Image.open("C:\Users\ghoru\Downloads\WhatsApp Image 2024-12-31 at 23.25.20_1cea4870.jpg")
+st.image(image)
 # Set page config for a modern look
 st.set_page_config(
     page_title="New Year Wishes 2025",
