@@ -66,7 +66,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title with custom styling
-st.markdown('<p class="big-font">✨#1F389 New Year Wishes 2025 #1F389✨</p>', unsafe_allow_html=True)
+st.markdown('<p class="big-font">✨🎉 New Year Wishes 2025 🎉✨</p>', unsafe_allow_html=True)
 
 # Input field for name
 name = st.text_input("Enter your name", key="name_input")
