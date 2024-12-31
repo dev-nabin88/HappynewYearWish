@@ -7,6 +7,7 @@ st.set_page_config(
     page_title="New Year Wishes 2025",
     page_icon="🎉",
     layout="centered"
+    background=#0E1117
 )
 
 # Custom CSS for modern styling
