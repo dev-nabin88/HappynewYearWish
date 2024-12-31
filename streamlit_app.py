@@ -7,14 +7,12 @@ st.set_page_config(
     page_title="New Year Wishes 2025",
     page_icon="🎉",
     layout="centered"
-
 )
 
 # Custom CSS for modern styling
 st.markdown("""
    <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
 
 @keyframes gradient {
     0% {background-position: 0% 50%;}
@@ -26,6 +24,22 @@ st.markdown("""
     background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96C93D, #FED766);
     background-size: 300% 300%;
     animation: gradient 10s ease infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+.stApp::after {
+    content: "Happy New Year 2025";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .stTextInput > label {
@@ -54,6 +68,8 @@ st.markdown("""
     backdrop-filter: blur(10px);
     margin: 2rem 0;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
 }
 
 .sparkles {
@@ -61,8 +77,7 @@ st.markdown("""
     margin: 0 0.5rem;
 }
 
-
-
+</style>
 """, unsafe_allow_html=True)
 
 # Title with custom styling
