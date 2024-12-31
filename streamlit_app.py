@@ -7,7 +7,7 @@ st.set_page_config(
     page_title="New Year Wishes 2025",
     page_icon="🎉",
     layout="centered"
-    background="#0E1117";
+
 )
 
 # Custom CSS for modern styling
@@ -21,13 +21,13 @@ st.markdown("""
     
     .stTextInput > label {
         font-family: 'Poppins', sans-serif;
-        color: #ffffff !important;
+        color:  #0E1117 !important;
         font-size: 1.2rem !important;
     }
     
     .big-font {
         font-family: 'Poppins', sans-serif;
-        color: #ffffff;
+        color:  #0E1117;
         font-size: 2.5rem !important;
         font-weight: 600;
         text-align: center;
@@ -36,7 +36,7 @@ st.markdown("""
     
     .wish-text {
         font-family: 'Poppins', sans-serif;
-        color: #ffffff;
+        color:  #0E1117;
         font-size: 1.8rem !important;
         text-align: center;
         padding: 2rem;
@@ -90,6 +90,6 @@ if st.button("Generate Wish", key="wish_button"):
 st.markdown("---")
 current_year = datetime.now().year
 st.markdown(
-    f'<p style="text-align: center; color: #ffffff;">© {current_year} | Made with ❤️ by nabin</p>',
+    f'<p style="text-align: center; color:  #0E1117;">© {current_year} | Made with ❤️ by nabin</p>',
     unsafe_allow_html=True
 )
