@@ -89,6 +89,6 @@ if st.button("Generate Wish", key="wish_button"):
 st.markdown("---")
 current_year = datetime.now().year
 st.markdown(
-    f'<p style="text-align: center; color: #ffffff;">© {current_year} | Made with ❤️</p>',
+    f'<p style="text-align: center; color: #ffffff;">© {current_year} | Made with ❤️ by nabin</p>',
     unsafe_allow_html=True
 )
