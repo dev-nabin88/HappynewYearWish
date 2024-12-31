@@ -3,7 +3,7 @@ from datetime import datetime
 import time
 from PIL import Image
 
-image = Image.open(""C:\Users\ghoru\Downloads\WhatsApp Image 2024-12-31 at 23.25.20_1cea4870.jpg"")  # Replace with your local image file path
+image = Image.open("C:\Users\ghoru\Downloads\WhatsApp Image 2024-12-31 at 23.25.20_1cea4870.jpg")  # Replace with your local image file path
 
 # Display the image on top
 st.image(image, use_column_width=True)
