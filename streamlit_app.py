@@ -15,27 +15,6 @@ st.markdown("""
    <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-.stApp::before {
-    content: "Happy New Year 2025";
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-30deg);
-    font-size: 6vw;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.1);
-    white-space: nowrap;
-    pointer-events: none;
-    z-index: -1;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { opacity: 0.1; }
-    50% { opacity: 0.2; }
-    100% { opacity: 0.1; }
-}
 
 @keyframes gradient {
     0% {background-position: 0% 50%;}
@@ -84,6 +63,28 @@ st.markdown("""
 
 
 </style>
+
+.stApp::before {
+    content: "Happy New Year 2025";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 6vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.1);
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: -1;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.1; }
+    50% { opacity: 0.2; }
+    100% { opacity: 0.1; }
+}
 """, unsafe_allow_html=True)
 
 # Title with custom styling
