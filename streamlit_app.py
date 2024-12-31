@@ -9,7 +9,7 @@ st.set_page_config(
     layout="centered"
 )
 
-# Custom CSS for modern styling
+# Custom CSS for modern styling and background message
 st.markdown("""
    <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
@@ -24,34 +24,29 @@ st.markdown("""
     background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96C93D, #FED766);
     background-size: 300% 300%;
     animation: gradient 10s ease infinite;
-    position: relative;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
     overflow: hidden;
+    position: relative;
 }
 
-.stApp::after {
-    content: "Happy New Year 2025";
+.background-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Poppins', sans-serif;
     font-size: 5rem;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.1);
-    z-index: 1;
     pointer-events: none;
-}
-
-.stTextInput > label {
-    font-family: 'Poppins', sans-serif;
-    color: white !important;
-    font-size: 1.2rem !important;
+    z-index: 0;
 }
 
 .big-font {
     font-family: 'Poppins', sans-serif;
     color: white;
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 2rem;
@@ -60,7 +55,7 @@ st.markdown("""
 .wish-text {
     font-family: 'Poppins', sans-serif;
     color: white;
-    font-size: 1.8rem !important;
+    font-size: 1.8rem;
     text-align: center;
     padding: 2rem;
     background: rgba(255, 255, 255, 0.2);
@@ -68,17 +63,18 @@ st.markdown("""
     backdrop-filter: blur(10px);
     margin: 2rem 0;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .sparkles {
     font-size: 2rem;
     margin: 0 0.5rem;
 }
-
 </style>
 """, unsafe_allow_html=True)
+
+# Add the background text
+st.markdown('<div class="background-text">Happy New Year 2025</div>', unsafe_allow_html=True)
 
 # Title with custom styling
 st.markdown('<p class="big-font">✨ New Year Wishes 2025 ✨</p>', unsafe_allow_html=True)
@@ -120,3 +116,4 @@ st.markdown(
     f'<p style="text-align: center; color: white;">© {current_year} | Made with ❤️ by nabin</p>',
     unsafe_allow_html=True
 )
+
